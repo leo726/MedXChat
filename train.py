@@ -1,6 +1,5 @@
 import os
 import sys
-sys.path.append('/apdcephfs/share_733425/vinnylywang/zhanyuwang/Code/xray_chat/')
 from pprint import pprint
 from configs.config import parser
 from dataset.data_module import DataModule
