@@ -1,5 +1,5 @@
 import sys
-sys.path.append("/apdcephfs/share_733425/vinnylywang/zhanyuwang/Code/xray_chat/models/cxr_diffusion")
+sys.path.append("/models/cxr_diffusion")
 from share import *
 import pytorch_lightning as pl
 from torch.utils.data import DataLoader
@@ -23,11 +23,11 @@ def generate_random_filename(extension=None):
 
 class CXRDiffusion:
     def __init__(self, device):
-        self.resume_path = '/apdcephfs/share_733425/vinnylywang/zhanyuwang/Code/xray_chat/models/ft_local/finetune_prompt2cxr.ckpt'
+        self.resume_path = 'finetune_prompt2cxr.ckpt'
         self.batch_size = 1
         self.logger_freq = 1
         self.learning_rate = 1e-5
-        self.model = create_model('/apdcephfs/share_733425/vinnylywang/zhanyuwang/Code/xray_chat/models/cxr_diffusion/models/cldm_v21.yaml').cpu()
+        self.model = create_model('/models/cxr_diffusion/models/cldm_v21.yaml').cpu()
         self.model.load_state_dict(load_state_dict(self.resume_path, location='cpu'))
         self.model.learning_rate = self.learning_rate
         self.model.sd_locked = False
