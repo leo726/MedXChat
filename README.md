@@ -24,3 +24,13 @@ conda activate medxchat
 conda install pytorch==2.4.1 torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia
 pip install -r requirements.txt
 ```
+
+To train the medxchat, run
+```
+python train.py
+```
+
+To inference the medxchat, run
+```
+python inference.py
+```
