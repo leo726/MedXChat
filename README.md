@@ -3,8 +3,8 @@
 
 [**MedXChat: A Unified Multimodal Large Language Model Framework towards CXRs Understanding and Generation**]
 
-[Patrick Esser](https://github.com/pesser)\*,
-[Robin Rombach](https://github.com/rromb)\*,
+[Patrick Esser](https://github.com/pesser),
+[Robin Rombach](https://github.com/rromb),
 [Björn Ommer](https://hci.iwr.uni-heidelberg.de/Staff/bommer)<br/>
 
 
