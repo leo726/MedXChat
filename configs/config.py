@@ -5,16 +5,16 @@ import ast
 parser = argparse.ArgumentParser(description="hyper-parameter for XChat")
 
 # ====================== Dataset Config ===========================
-parser.add_argument('--dataset', metavar='DATASET', default='data/mimic_cxr/my_mimic_anno.json', help='training datasets to use')
-parser.add_argument('--base_dir', default='./data/mimic_cxr/images', type=str, help='Dataset directory containing image folders.')
-parser.add_argument('--savedmodel_path', default='./save/RG_v1', type=str, help='Dataset directory containing image folders.')
+parser.add_argument('--dataset', metavar='DATASET', default='data/annotation.json', help='training datasets to use')
+parser.add_argument('--base_dir', default='/mnt/sdc/yangling/ControlNet/training/mimic_cxr/images', type=str, help='Dataset directory containing image folders.')
+parser.add_argument('--savedmodel_path', default='save/xchat_v1', type=str, help='Dataset directory containing image folders.')
 parser.add_argument('--ckpt_file', default=None, type=str, help='Dataset directory containing image folders.')
 parser.add_argument('--delta_file', default=None, type=str, help='Dataset directory containing image folders.')
 parser.add_argument('--text_embed', default='clip_embeds_zero', type=str, help='Dataset directory containing image folders.')
 parser.add_argument('--use_embed', default=False, type=lambda x: (str(x).lower() == 'true'), help='load video embedding or video')
 
 # ====================== Model Config ===========================
-parser.add_argument('--llm_model', default='./Checkpoints/mplug-owl-llama-7b', help='LLM to use, meta-llama/Llama-2-7b-chat-hf')
+parser.add_argument('--llm_model', default='MAGAer13/mplug-owl-llama-7b', help='LLM to use, meta-llama/Llama-2-7b-chat-hf')
 parser.add_argument('--llm_use_lora', default=True, type=lambda x: (str(x).lower() == 'true'), help="freeze llm model or not")
 parser.add_argument('--lora_inference', default=False, type=lambda x: (str(x).lower() == 'true'), help="freeze llm model or not")
 parser.add_argument('--llm_r', default=16, type=int, help='The dimension used by the LoRA update matrices')
