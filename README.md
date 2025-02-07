@@ -27,11 +27,11 @@ pip install -r requirements.txt
 
 To train MedXChat, you need to download the MIMIC dataset images.
 
-For Text-to-CXR task, the json file for MIMIC dataset is [Text-to-CXR]().
+For Text-to-CXR task, the json file for MIMIC dataset is [Text-to-CXR](https://drive.google.com/file/d/12LUDdJW8_R0usXVe8EQvgCvhplje9LgH/view?usp=drive_link).
 
-For CXR-VQA task, the json file for MIMIC dataset is [CXR-VQA]().
+For CXR-VQA task, the json file for MIMIC dataset is [CXR-VQA](https://drive.google.com/file/d/1wh8Gi1M6AV1lH37Dnq-rAquORdg5YGCR/view?usp=drive_link).
 
-For CXR-to-Report task, we use Chatgpt to construct instruction tuning dialogues, the json file is [CXR-to-Report]().
+For CXR-to-Report task, we use Chatgpt to construct instruction tuning dialogues, the json file is [CXR-to-Report](https://drive.google.com/file/d/1ZRFARG_H5odDyO0jWJNXh1x7QZ6w4QFO/view?usp=drive_link).
 
 
 
