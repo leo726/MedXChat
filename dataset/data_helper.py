@@ -1,5 +1,5 @@
 import sys
-sys.path.append('/apdcephfs/share_733425/vinnylywang/zhanyuwang/Code/xray_chat/')
+sys.path.append('/mnt/sdc/yangling/MedXchat/')
 import os
 import json
 import numpy as np
@@ -12,8 +12,10 @@ from transformers import AutoTokenizer
 from models.mplug_owl.tokenization_mplug_owl import MplugOwlTokenizer
 from models.mplug_owl.processing_mplug_owl import MplugOwlImageProcessor, MplugOwlProcessor
 
-pretrained_ckpt = './Checkpoints/mplug-owl-llama-7b-video'
-tokenizer = MplugOwlTokenizer.from_pretrained(pretrained_ckpt)
+# pretrained_ckpt = './Checkpoints/mplug-owl-llama-7b-video'
+# tokenizer = MplugOwlTokenizer.from_pretrained(pretrained_ckpt)
+pretrained_ckpt = 'MAGAer13/mplug-owl-llama-7b'
+tokenizer = AutoTokenizer.from_pretrained(pretrained_ckpt)
 
 class FieldParser:
     def __init__(
