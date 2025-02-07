@@ -25,9 +25,15 @@ conda install pytorch==2.4.1 torchvision torchaudio pytorch-cuda=12.1 -c pytorch
 pip install -r requirements.txt
 ```
 
-For Text-to-CXR task, the dataset is [Text-to-CXR](),
-For CXR-VQA task, the dataset is [CXR-VQA](),
-For CXR-to-Report task, the dataset is [CXR-to-Report]().
+To train MedXChat, you need to download the MIMIC dataset images.
+
+For Text-to-CXR task, the json file for MIMIC dataset is [Text-to-CXR]().
+
+For CXR-VQA task, the json file for MIMIC dataset is [CXR-VQA]().
+
+For CXR-to-Report task, we use Chatgpt to construct instruction tuning dialogues, the json file is [CXR-to-Report]().
+
+
 
 
 To train the medxchat, run
