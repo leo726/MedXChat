@@ -25,6 +25,11 @@ conda install pytorch==2.4.1 torchvision torchaudio pytorch-cuda=12.1 -c pytorch
 pip install -r requirements.txt
 ```
 
+For Text-to-CXR task, the dataset is [Text-to-CXR](),
+For CXR-VQA task, the dataset is [CXR-VQA](),
+For CXR-to-Report task, the dataset is [CXR-to-Report]().
+
+
 To train the medxchat, run
 ```
 python train.py
