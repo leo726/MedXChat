@@ -1,5 +1,5 @@
 import sys
-sys.path.append('/apdcephfs/share_733425/vinnylywang/zhanyuwang/Code/xray_chat')
+sys.path.append('/mnt/sdc/yangling/MedXchat')
 from lightning.pytorch import LightningDataModule
 from torch.utils.data import DataLoader
 from dataset.data_helper import create_datasets
