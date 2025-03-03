@@ -1,5 +1,5 @@
 # MedXChat: A Unified Multimodal Large Language Model Framework towards CXRs Understanding and Generation
-##### ISBI 2025
+##### ISBI 2025 Oral
 
 [**MedXChat: A Unified Multimodal Large Language Model Framework towards CXRs Understanding and Generation**]
 
