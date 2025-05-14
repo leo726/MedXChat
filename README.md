@@ -7,7 +7,7 @@
 [Zhanyu Wang](https://scholar.google.com/citations?hl=zh-CN&user=maeFb38AAAAJ),
 [Zhenghao Chen](https://scholar.google.com/citations?hl=zh-CN&user=BThVCu8AAAAJ),
 Xinyu Liang,
-[Luping Zhou](https://scholar.google.com/citations?user=BThVCu8AAAAJ&hl=zh-CN&oi=ao)<br/>
+[Luping Zhou](https://scholar.google.com.au/citations?user=SgofT2MAAAAJ&hl=en)<br/>
 
 
 ![teaser](assets/medxchat.png)
